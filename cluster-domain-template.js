@@ -7,10 +7,10 @@ var http = require('http');
 var SERVER_CLOSE_TIMEOUT_SECS = 5;
 
 function startServer(){
+  var server;
   var app = express();
   var port = process.env.PORT || 80;
   var router = express.Router();
-  var server;
   
   function badFunc(){
     process.nextTick(function(){
