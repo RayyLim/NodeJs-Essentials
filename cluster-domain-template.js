@@ -11,7 +11,6 @@ function startServer(){
   var port = process.env.PORT || 80;
   var router = express.Router();
   var server;
-  var sockets = [];
   
   function badFunc(){
     process.nextTick(function(){
