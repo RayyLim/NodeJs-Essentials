@@ -1,0 +1,4 @@
+{
+  "name": "NodeJs-Essentials",
+  "dependencies": {"express": ">= 1.2.0"}
+}
