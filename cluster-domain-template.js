@@ -121,7 +121,7 @@ function main(){
         // Server domain
         var d = domain.create();
         d.on('error', function(err){
-            console.error('[ID: ' + cluster.worker.id + ', PID: ' + cluster.worker.process.pid + '] Server domain error: \n' + err.stack);
+            console.error('[ID: ' + cluster.worker.id + ', PID: ' + cluster.worker.process.pid + '] Server domain got error: \n' + err.stack);
             cluster.worker.disconnect();
         });
         
